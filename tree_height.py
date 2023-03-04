@@ -34,7 +34,7 @@ def main():
     if input_type[:1] == 'F':
         file_name = input()
         try:
-            with open(file_name) as text_file:
+            with open("test/"+file_name+".txt") as text_file:
                 n = int(text_file.readline())
                 parents = numpy.asarray([int(x) for x in text_file.readline().split()])
         except IOError:
